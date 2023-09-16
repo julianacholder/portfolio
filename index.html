@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="portfolio-main">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="#"><img src="logo.svg" alt="logo"></a>
+                    </div>
+                    <!-- toggle bar -->
+                    <div class="toggle-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="navigation-bar">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">my work</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li class="hire-btn"><a href="#">Hire me</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <div class="main-content">
+            <div class="container">
+                <div class="main-content-wrapper">
+                    <div class="col-left">
+                        <span>Hi I am Juliana Crystal Holder</span>
+                        <h1>Freelancer | Front-end Developer</h1>
+                        <p> A passionate Software engineering student at the African Leadership University based in Kigali Rwanda.</p>
+                        <a href="#" class="btn-main">
+                            See my work 
+                            <div class="arrow"></div>
+                        </a>
+                    </div>
+                    <div class="col-right">
+                        <img src="julie babe.jpg" alt="Display image" id="picture" >
+                    </div>
+                </div>
+                <!-- experience -->
+                <div class="experience-section">
+                    <div class="experience-inner">
+                        <div class="col">
+                            <h3>1 year</h3>
+                            <p>experience</p>
+                        </div>
+                        <div class="col">
+                            <h3>50+</h3>
+                            <p>Happy clients</p>
+                        </div>
+                        <div class="col">
+                            <h3>3+</h3>
+                            <p>Projects completed</p>
+                        </div>
+                        <div class="col">
+                            <h3>30+</h3>
+                            <p>Award won</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+<script>
+    $('.toggle-bar').on('click', function (event) {
+        $('this').toggleClass('open');
+        $('.navigation-bar').slideToggle('200');
+    })
+</script>
+
+</html>
